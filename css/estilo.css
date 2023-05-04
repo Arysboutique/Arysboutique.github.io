@@ -1,0 +1,277 @@
+/* Body */
+body{
+	/*para colocar una imagen de fondo*/
+	background-image:url("../imagenes/fondo.jpg");
+	/*para que no se repita la imagen de fondo*/
+	background-repeat: no-repeat;
+	/*para ajustar el tamaño de la imagen*/
+	background-size: 100% 100%;
+	/*font-family es para el tipo de letra: si el 1 no lo encuentra en el navegador, colcoa el segundo,si no el tercero*/
+	font-family: Caviar;
+	/*font-size es para el tamaño se expresa en pixeles*/
+	font-size: 50px;
+	/*Color es para el color de las letras: Puedes colocar su valor hexadecimal, el nombre del color o valores rbg*/
+	color: #070706;
+}
+hr{
+	/*border es para la linea tamaño en pixeles tipo de linea y color*/
+	border: 5px solid #4804FC;
+	/*border-radius es para el tamao de las orillas el radio que tendra se expresa en pixeles*/
+	border-radius: 5px;
+	border-width: 80%;
+}
+
+p{
+	/*Text align se utiliza para alinear el texto
+	por default estan alineados a la izquierda*/
+	text-align:justify;
+	font-size: 20px;
+	color:black;
+	background-color:
+}
+
+table,td,tr{
+	/*Linea de grosor y tipo de linea*/
+	border:3px solid;
+	/*Color de la linea*/
+	border-color:#0A0A0A ; 
+	/*Alineacion del texto*/
+	text-align: center;
+	/*color de fondo*/
+	background-color: #FEFC76;
+}
+th{
+	background-color:white;
+}
+ul{
+	/*indica el tipo de viñeta,en este caso
+	un circulo,puede ser tambien un cuadrado*/
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+ol{
+	/*Algunos de los valores de list-style-type son:
+	lower-alpha; lower-roman; upper-alpha; upper-roman;
+	a,b,c,d,e,f i,ii,iii,iv A,B,C,D,E,F I,II,III,IV*/
+	list-style-type:upper-roman;
+	list-style-position: inside;
+}
+.pie{
+	text-align:center;
+	font-size:18px;
+	color: #080707 ;
+	font-family: coolvetica;
+	font-weight:bold;
+}
+.tabla{
+	text-align:center;
+	font-size:20px;
+	color: #080707 ;
+	font-family: Nexa;
+	
+}
+.texto{
+	text-align:center;
+	font-size:35px;
+	color: #080707 ;
+	font-family: Vogue;
+	font-weight:bold;
+}
+
+.img-marquee{
+	width:500px;
+	height:350px;	
+}
+
+.botones{
+	border-radius:40px;
+	width:90px;
+	height:90px;
+}
+
+.imgtablas{
+	width:150px;
+	height:200px;
+	
+}
+
+.otrasimg{
+width:450px;
+height:450x;	
+border:8px solid #0D0D0D;
+padding:5px;
+}
+
+@font-face{
+	font-family:Vogue;
+	src:url("../fuentes/Vogue.ttf")
+	
+}
+
+@font-face{
+	font-family: Nexa;
+	src:url("../fuentes/Nexa-Heavy.ttf")
+}
+
+@font-face{
+	font-family:Caviar;
+	src:url("../fuentes/CaviarDreams_BoldItalic..ttf")
+}
+
+@font-face{
+	font-family:coolvetica;
+	src:url("../fuentes/coolvetica rg it.otf")
+}
+	.fuentegoogle{
+	font-family: 'Alkatra', cursive;
+	font-size:40px;
+	text-align:center;
+	}
+
+	/*Uso de Div´s*/
+	/*Div o caja para el encabezado*/
+	*{
+		margin:0px;
+		padding:0px;
+	}
+		
+	
+	
+div#top{
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#650CE5 ,#5606CA );
+}
+
+div#pricnipal{
+	margin:auto;
+	margin-top:10px;
+	width:100%;
+	/*height:750px;*/
+	background-image:linear-gradient(#954CFD,#7418FA);
+}
+div#piep{
+	margin-top:10px;
+	width:100%;
+	height:125px;
+	background-image:radial-gradient(#6908F4,#590ACC);
+}
+.caja{
+	height:350px;
+	width:250px;
+	background:#BD70FD;
+	border:5px solid black;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja1{
+	height:100px;
+	width:100px;
+	background:#BD70FD;
+	border:5px solid black;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja1:hover{
+	box-shadow:0 0 10px black;
+	transform:scale(1.3);
+}
+.caja:hover{
+	box-shadow:0 0 10px black;
+	transform:scale(1.3);
+}
+
+.caja-texto{
+padding-top:2px;
+font-size:20px;
+color:black;
+}
+
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.carrousel{
+    width:600px;
+    margin:auto;
+    box-sizing:border-box;
+}
+.conteCarrousel{
+    width:100%;
+    height:400px;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.itemCarrousel{
+    position:relative;
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+    width:100%;
+    height:100%;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    box-sizing:border-box;
+}
+.itemCarrouselArrows >i :hover{
+    cursor:pointer;
+}
+.conterCarrouselController{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.conterCarrouselController >a{
+    text-decoration:none;
+    font-size:32px;
+    color:grey;
+}
+.itemCarrouselArrows >a >i {
+    color:white;
+}
+   .textoProductos{
+	   width:500px;
+	   background-image:linear-gradient(gray,blue);
+	   font-size:20px;
+		color:white;
+   }
+  
+  #menuhorizontal{
+  margin: 0;
+  padding: 0;
+  list-style-type:none; 
+  }
+  
+  #menuhorizontal a{ width:100px;
+  text-decoration:none;
+  text-align:center;
+  color:purple;
+  padding: 5px;
+  broder-right:1px solid pruple;
+  display:inside-block
+  #menuhorizontal li{
+	  float:left
+  }
+	  #menuhorizontal a:hover{
+	  background-color:yellow
+	  }
+  
